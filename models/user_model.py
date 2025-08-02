@@ -10,6 +10,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     
     def __repr__(self):
+        
         return f'<User {self.username}>'
     
     def to_dict(self):
