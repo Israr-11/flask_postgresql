@@ -1,6 +1,7 @@
 from flask import jsonify
 from services.user_service import UserService
 
+
 class UserController:
     def __init__(self):
         self.user_service = UserService()
